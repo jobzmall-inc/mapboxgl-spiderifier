@@ -24,11 +24,11 @@
         // --- <SPIDER TUNING Params>
         // circleSpiralSwitchover: show spiral instead of circle from this marker count upwards
         //                        0 -> always spiral; Infinity -> always circle
-        circleSpiralSwitchover: 9,
-        circleFootSeparation: 25, // related to circumference of circle
-        spiralFootSeparation: 28, // related to size of spiral (experiment!)
-        spiralLengthStart: 15, // ditto
-        spiralLengthFactor: 4, // ditto
+        circleSpiralSwitchover: userOptions.circleSpiralSwitchover || 9,
+        circleFootSeparation: userOptions.circleFootSeparation || 25, // related to circumference of circle
+        spiralFootSeparation: userOptions.spiralFootSeparation || 28, // related to size of spiral (experiment!)
+        spiralLengthStart: userOptions.spiralFootSeparation || 15, // ditto
+        spiralLengthFactor: userOptions.spiralLengthFactor || 4, // ditto
         // ---
       },
       twoPi = Math.PI * 2,
